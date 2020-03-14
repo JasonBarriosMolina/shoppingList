@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace LambdaShoppingList.Controllers
 {
     [Route("v1/productList")]
-    public class ProductListController : Controller
+    public class ProductListController : Controller 
     {
         [HttpGet]
         public IActionResult GetProductList()
