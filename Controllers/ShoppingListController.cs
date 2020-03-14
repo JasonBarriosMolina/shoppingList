@@ -8,35 +8,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LambdaShoppingList.Controllers
 {
-    [Route("v1/shoppingList")]
-    public class ShoppingListController : Controller
+    [Route("v1/productList")]
+    public class ProductListController : Controller
     {
-        private readonly IShoppingListService _shoppingListService;
-
-        public ShoppingListController(IShoppingListService shoppingListService) 
-        {
-            _shoppingListService = shoppingListService;
-        }
-
         [HttpGet]
-        public IActionResult GetShoppingList()
+        public IActionResult GetProductList()
         {
-            var result = _shoppingListService.GetItemFromShoppingList();
-            return Ok(result);
-        }
-        [HttpPost]
-        public IActionResult AddItemToShoppingList([FromBody] ShoppingListModel shoppingList) 
-        {
-            _shoppingListService.AddItemsToShoppingList(shoppingList);
-            return Ok();
+            return Ok("Testing...");
         }
 
-        [HttpDelete]
-        public IActionResult DeleteItemsFromShoppingList([FromBody] ShoppingListModel shoppingList)
-        {
-            _shoppingListService.RemoveItem(shoppingList.Name);
-
-            return Ok();
-        }
     }
 }
