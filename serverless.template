@@ -53,6 +53,7 @@
         "Environment": {
           "Variables": {
             "AppS3Bucket": {
+              "Region": "us-east-1",
               "Fn::If": [
                 "CreateS3Bucket",
                 {
