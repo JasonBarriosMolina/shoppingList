@@ -48,12 +48,11 @@
         "Timeout": 30,
         "Role": null,
         "Policies": [
-          "AWSLambdaFullAccess"
+          "AWSCodePipelineServiceRole-us-east-1-shoppin-list-dev"
         ],
         "Environment": {
           "Variables": {
             "AppS3Bucket": {
-              "Region": "us-east-1",
               "Fn::If": [
                 "CreateS3Bucket",
                 {
