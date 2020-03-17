@@ -11,7 +11,7 @@
   "framework": "netcoreapp2.1",
   "s3-prefix": "LambdaShoppingList/",
   "template": "serverless.template",
-  "template-parameters": "\"ShouldCreateBucket\"=\"true\";\"BucketName\"=\"practice-jason-aws-2\"",
+  "template-parameters": "\"ShouldCreateBucket\"=\"true\";\"BucketName\"=\"\"",
   "s3-bucket": "practice-jason-aws",
   "stack-name": "LambdaShoppingList"
 }
