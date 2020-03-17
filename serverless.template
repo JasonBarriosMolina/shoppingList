@@ -46,7 +46,7 @@
         "CodeUri": "",
         "MemorySize": 256,
         "Timeout": 30,
-        "Role": "arn:aws:iam::241117636945:role/MyS3AdminAccess",
+        "Role": null,
         "Policies": [
           "AWSLambdaFullAccess"
         ],
