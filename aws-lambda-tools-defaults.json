@@ -12,6 +12,6 @@
   "s3-prefix": "LambdaShoppingList/",
   "template": "serverless.template",
   "template-parameters": "\"ShouldCreateBucket\"=\"true\";\"BucketName\"=\"practice-jason-aws-2\"",
-  "s3-bucket": "practice-jason-aws",
+  "s3-bucket": "codepipeline-us-east-1-309979521117",
   "stack-name": "LambdaShoppingList"
 }
